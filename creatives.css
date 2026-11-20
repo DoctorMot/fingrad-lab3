@@ -1,0 +1,28 @@
+.creative-page { background: #eef2f6; }
+.creative-page main { padding-block: 42px 66px; }
+.creative-header { margin-bottom: 32px; }
+.creative-header h1 { margin: 18px 0 8px; font-size: clamp(34px, 5vw, 58px); }
+.creative-header p { color: #475569; font-size: 16px; }
+.creative-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 18px; }
+.creative { min-width: 0; border: 1px solid #dbe4ef; border-radius: 19px; background: #fff; padding: 8px; }
+.poster { --accent: #70e7d3; --paper: #092e35; --line: #95eddf52; --pale: #cef8f1; display: flex; flex-direction: column; min-height: 430px; padding: 23px; border-radius: 12px; background: var(--paper); color: #fff; }
+.poster-detail { --accent: #b4d4ff; --paper: #172d66; --line: #b4d4ff60; --pale: #e3efff; }
+.poster-plan { --accent: #ffde9f; --paper: #352746; --line: #ffde9f63; --pale: #fff0d6; }
+.poster-brand { font-size: 15px; font-weight: 770; }
+.poster-brand span { display: inline-grid; place-items: center; margin-right: 4px; width: 24px; height: 24px; border-radius: 5px; background: var(--accent); color: var(--paper); font-size: 13px; }
+.poster h2 { font-size: clamp(25px, 2.5vw, 36px); line-height: 1.07; margin: 24px 0 9px; letter-spacing: -.045em; }
+.poster p { margin-bottom: 16px; color: var(--pale); font-size: 14px; line-height: 1.35; }
+.graphic { display: grid; align-content: center; flex: 1; gap: 9px; min-height: 122px; margin-bottom: 22px; padding: 12px; border-radius: 10px; border: 1px solid var(--line); }
+.composition { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; }
+.composition span { border: 1px solid var(--line); border-radius: 6px; padding: 6px; text-align: center; flex: 1; }
+.composition b { color: var(--accent); }
+.composition .active, .destination { background: var(--accent); color: var(--paper); }
+.destination { display: flex; justify-content: center; align-items: center; gap: 6px; font-size: 12px; font-weight: 800; border-radius: 6px; padding: 8px; }
+.destination i { width: 10px; height: 8px; border-top: 2px solid; border-bottom: 2px solid; }
+.composition.detail { display: grid; grid-template-columns: 1fr 1fr; }
+.poster-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 11px; color: var(--pale); }
+.poster-cta { background: #fff; color: var(--paper); border-radius: 8px; padding: 9px 11px; font-weight: 800; text-decoration: none; font-size: 13px; }
+.poster-cta:hover { background: var(--accent); }
+.caption { margin: 13px 10px 10px; color: #475569; line-height: 1.5; font-size: 14px; }
+@media (max-width: 1070px) { .creative-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 660px) { .creative-grid { grid-template-columns: 1fr; } .creative-page main { padding-top: 24px; } .poster { min-height: 370px; } }

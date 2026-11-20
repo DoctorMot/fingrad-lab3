@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Учебная демонстрация ФинГрада: консолидированная отчётность группы компаний поверх баз 1С.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f1f5f9">
+  <title>ФинГрад — консолидированная отчётность группы компаний</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./analytics-config.js"></script>
+  <script defer src="./analytics.js"></script>
+  <script defer src="./demo.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header">
+    <div class="notice"><div class="wrap">Учебная демонстрация отчёта группы ресторанов</div></div>
+    <div class="wrap navbar">
+      <a class="brand" href="#main" aria-label="ФинГрад, на главную"><span class="brand-mark" aria-hidden="true">Ф</span>ФинГрад</a>
+      <nav aria-label="Навигация">
+        <a href="#report">Пример отчёта</a>
+        <a href="#workflow">Как работает</a>
+        <a href="#questions">Вопросы</a>
+      </nav>
+      <button class="button button-small" type="button" data-demo-open>Открыть демо</button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Для групп компаний на 1С</p>
+          <h1 id="hero-title">Отчётность всей группы компаний в одном месте</h1>
+          <p class="hero-lead">ФинГрад собирает данные из нескольких баз 1С и сводит их в отчёты группы. Откройте пример и посмотрите, из чего складывается каждая строка.</p>
+          <ul class="check-list">
+            <li>ДДС, ОПУ и баланс группы</li>
+            <li>Расшифровка показателей по юрлицам</li>
+            <li>Учёт остаётся в привычных базах 1С</li>
+          </ul>
+          <div class="hero-actions">
+            <button class="button" type="button" data-demo-open>Открыть демо-отчёт</button>
+            <a class="button button-outline" href="#workflow">Как работает</a>
+          </div>
+          <p class="muted hero-note">Откроется сразу. Регистрация не нужна.</p>
+        </div>
+        <article class="report-card" id="report" aria-labelledby="report-title">
+          <div class="report-heading">
+            <div>
+              <h2 id="report-title">ОПУ группы за сентябрь</h2>
+              <span>Группа ресторанов из 8 юрлиц</span>
+            </div>
+            <span class="status">Демо</span>
+          </div>
+          <div class="report-body">
+            <table class="report-table">
+              <caption class="visually-hidden">Пример отчёта о прибылях и убытках, млн рублей</caption>
+              <thead><tr><th scope="col">Показатель</th><th scope="col">Млн ₽</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Выручка</th><td>168,4</td></tr>
+                <tr><th scope="row">Себестоимость</th><td>−69,9</td></tr>
+                <tr><th scope="row">Валовая прибыль</th><td>98,5</td></tr>
+                <tr><th scope="row">Расходы на персонал</th><td>−48,6</td></tr>
+                <tr><th scope="row">Аренда и коммунальные</th><td>−22,1</td></tr>
+                <tr class="total"><th scope="row">Операционная прибыль</th><td>27,8</td></tr>
+              </tbody>
+            </table>
+            <button class="text-button report-link" type="button" data-demo-open>Посмотреть расшифровку <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="workflow" aria-labelledby="workflow-title">
+      <div class="wrap">
+        <h2 id="workflow-title">От базы 1С до отчёта группы</h2>
+        <p class="section-intro">Сотрудники продолжают вести учёт в своих базах. Финансовая команда получает общую картину по группе.</p>
+        <ol class="steps">
+          <li><h3>Подключить источники</h3><p>Собрать данные из баз 1С по каждому юрлицу.</p></li>
+          <li><h3>Настроить правила</h3><p>Сопоставить статьи учёта и исключить обороты внутри группы.</p></li>
+          <li><h3>Сформировать отчёты</h3><p>Собрать ДДС, ОПУ и баланс по единым правилам.</p></li>
+          <li><h3>Проверить показатели</h3><p>Раскрыть строку отчёта и сверить суммы по юрлицам.</p></li>
+        </ol>
+      </div>
+    </section>
+    <section class="section section-muted" id="questions" aria-labelledby="questions-title">
+      <div class="wrap faq-layout">
+        <div>
+          <h2 id="questions-title">Вопросы о демо</h2>
+          <p class="section-intro">Посмотрите, как устроен отчёт, на учебном примере.</p>
+        </div>
+        <div class="faq">
+          <details><summary>Нужно ли подключать свою базу 1С?</summary><p>Демо открывается с готовым набором учебных данных. Ничего загружать или подключать не требуется.</p></details>
+          <details><summary>Что можно проверить в отчёте?</summary><p>Раскройте одну или несколько строк и сравните итоговую сумму с разбивкой по юрлицам и статьям.</p></details>
+          <details><summary>Как используется веб-аналитика?</summary><p>С вашего согласия GA4 и Яндекс Метрика учитывают просмотры страницы и действия в демо. Настройки можно изменить через ссылку внизу страницы.</p></details>
+        </div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="try-title">
+      <div class="wrap">
+        <div class="final-callout">
+          <div><h2 id="try-title">Проверьте любую строку отчёта</h2><p>Например, раскройте выручку и посмотрите её разбивку по юрлицам.</p></div>
+          <button class="button" type="button" data-demo-open>Открыть демо-отчёт</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="wrap qa-section" aria-labelledby="qa-title" data-qa-panel hidden>
+    <details open>
+      <summary id="qa-title">Тестовый визит (finlab3_qa)</summary>
+      <p data-qa-status aria-live="polite"></p>
+      <p>Разрешите аналитику, затем откройте демо и раскройте строку. События ниже относятся к этой странице.</p>
+      <ol data-qa-output aria-live="polite"></ol>
+    </details>
+  </section>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-credit"><strong>ФинГрад</strong> <span>Учебный проект по маркетингу</span></p>
+      <button class="text-button" type="button" data-consent-settings hidden>Настройки аналитики</button>
+    </div>
+  </footer>
+
+  <dialog class="demo-dialog" id="demo-dialog" aria-labelledby="demo-title">
+    <div class="dialog-top">
+      <div>
+        <p class="eyebrow">Учебные данные в млн ₽</p>
+        <h2 id="demo-title">Отчёт о прибылях и убытках</h2>
+      </div>
+      <form method="dialog">
+        <button class="close-button" type="submit" aria-label="Закрыть демо" autofocus>×</button>
+      </form>
+    </div>
+    <p class="dialog-intro">Данные за сентябрь по 8 юрлицам. Выберите показатель, чтобы увидеть детализацию.</p>
+    <div class="demo-report" data-demo-rows></div>
+  </dialog>
+
+  <section class="consent-banner" aria-label="Настройки веб-аналитики" data-consent-banner hidden>
+    <div><strong>Веб-аналитика</strong><p>С вашего согласия используем GA4 и Яндекс Метрику, чтобы измерять посещения и действия в демо.</p></div>
+    <div class="consent-actions">
+      <button class="button button-outline button-small" type="button" data-consent-decline>Отклонить</button>
+      <button class="button button-small" type="button" data-consent-accept>Разрешить</button>
+    </div>
+  </section>
+</body>
+</html>
